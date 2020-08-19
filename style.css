@@ -1,10 +1,12 @@
 body {
+
     margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 a,
@@ -195,7 +197,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .75);
 }
 
 .d-bloc .panel button:hover,
@@ -640,12 +642,10 @@ a[data-lightbox]:hover img {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6,
-p,
 label,
 .btn,
 a {
@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -707,6 +707,7 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 h3 {
@@ -724,6 +725,7 @@ h3 {
 
 h1 {
     color: #333333!important;
+    text-shadow: 1px 1px 1px black;
 }
 
 h4 {
@@ -735,6 +737,9 @@ h4 {
     margin-top: 24px;
 }
 
+.black {
+    color: black;
+}
 .white {
     color: #FFFFFF!important;
 }
@@ -771,7 +776,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #F3976C
 }
 
 .tc-white {
@@ -780,7 +785,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1026,6 +1031,15 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .div{
+        margin: auto;
+    }
+    
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -1033,10 +1047,5 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
-    }
+    
 }

@@ -29,7 +29,7 @@ menu,
 nav,
 section,
 summary {
-    display: block
+    display: block;
 }
 
 audio,
@@ -5200,7 +5200,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-brand>img {
-    display: block
+    display: block;
+    height: 50px
 }
 
 @media (min-width:768px) {
