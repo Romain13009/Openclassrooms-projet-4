@@ -534,8 +534,10 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -899,16 +901,23 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+
+    .row{
+        margin: 0;
+    }
     h1,
     h2,
     h3,
     h4,
     h5,
     h6,
-    p,
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+    }
+
+    p{
+        padding-bottom: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -985,7 +994,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding:0;
     }
     .bloc-sm,
     .bloc-md {
@@ -1040,6 +1049,12 @@ h4 {
         text-align: center;
     }
 
+    .col-sm-12 img{
+        max-width: 120px;
+        margin-top: 10px;
+
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -1047,5 +1062,7 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
-    
+     h2{
+         font-size: 16px;
+     }
 }
